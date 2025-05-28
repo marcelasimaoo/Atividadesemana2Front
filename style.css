@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #2c0b15; 
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculadora {
+  background-color: #4b1e2a; 
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  width: 320px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.display {
+  grid-column: span 4;
+  height: 60px;
+  background-color: #fff;
+  color: #2c0b15;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Estilo dos botões */
+button.numero {
+  background-color: #d85b69; /* Marsala claro */
+  color: #fff;
+}
+
+button.operacao {
+  background-color: #9c3848; /* Vinho forte */
+  color: #fff;
+}
+
+button.acao {
+  background-color: #e9c4c7; /* Bege rosado */
+  color: #4b1e2a;
+}
